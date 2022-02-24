@@ -1,0 +1,29 @@
+# Project: unsorok
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = decode.o $(RES)
+LINKOBJ  = decode.o $(RES)
+LIBS =  -L"D:/Dev-Cpp/lib" 
+INCS =  -I"D:/Dev-Cpp/include" 
+CXXINCS =  -I"D:/Dev-Cpp/include/c++"  -I"D:/Dev-Cpp/include/c++/mingw32"  -I"D:/Dev-Cpp/include/c++/backward"  -I"D:/Dev-Cpp/include" 
+BIN  = unsorok.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS = $(INCS) 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before unsorok.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CC) $(LINKOBJ) -o "unsorok.exe" $(LIBS)
+
+decode.o: decode.c
+	$(CC) -c decode.c -o decode.o $(CFLAGS)
