@@ -1,0 +1,8 @@
+versi terdekat :
+- implemen enkripsi
+- implemen permampatan data
+
+
+
+mungkin pd versi akan data :
+- sokongan fail berformat lain

@@ -1,0 +1,16 @@
+
+2004 05-04 0.05
+---------------
+- Tukar format file
+- pilihan utk simpan teks yang terbenam
+- ruangan makluman
+
+
+
+
+2004-05-01 (Labour's Day) 
+-------------------------
+- initial version
+
+
+
